@@ -33,6 +33,8 @@ function verifyJWT(req, res, next) {
     })
 }
 
+
+
 async function run() {
     try {
         const serviceCollection = client.db('geniousCar').collection('services')
@@ -55,6 +57,7 @@ async function run() {
                     }
                 }
             }
+
             // const query = { price: { $gt: 100, $lt: 200 } }
             // const query = { price: { $eq: 200 } }
             // const query = { price: { $gte: 40 } }
